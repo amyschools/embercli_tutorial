@@ -34,7 +34,7 @@ export default Ember.Component.extend({
             cancel() {
                 console.log('+- cancel action in edit-form component');
                 // We are calling the cancel action passed down when rendering the // component: action=(action "cancel")
-        this.cancel();
+            this.cancel(this.get('model'));
         }
     }
 });
